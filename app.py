@@ -26,7 +26,8 @@ def index():
 
 @app.route("/recommend")
 def recommend_ui():
-    return render_template('recommend.html')
+    return render_template('recommend.html',
+                            book_name = list(popular_df['Book-Title'].values))
 
 @app.route('/recommend_books', methods=['post'])
 def recommend():
@@ -46,7 +47,7 @@ def recommend():
 
     print(data)
 
-    return render_template('recommend.html',data=data)
+    return render_template('recommend.html',data=data,book_name = list(popular_df['Book-Title'].values))
 
 if __name__ == "__main__":
     app.run(debug=True)
