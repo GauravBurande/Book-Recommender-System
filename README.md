@@ -3,7 +3,7 @@
 hi👋
 
 Nice to meet you✨👀
-My name is gaurav, I'm learning Data Science
+My name is gaurav, I'm learning a bunch of stuff
 and this is my first successfull deployed model.
 
 This is a fully responsive webapp I made for
